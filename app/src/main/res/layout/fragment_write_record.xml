@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.WriteRecordFragment">
+
+   <RelativeLayout
+       android:id="@+id/ll_no_data"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <ImageView
+          android:id="@+id/iv_no_lyrics"
+          android:layout_centerInParent="true"
+          android:src="@drawable/no_lyrics"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      <TextView
+          android:layout_marginTop="16dp"
+          android:textSize="18sp"
+          android:textStyle="bold"
+          android:id="@+id/tv_nothing_yet"
+          android:layout_below="@+id/iv_no_lyrics"
+          android:layout_centerHorizontal="true"
+          android:text="@string/nothing_yet"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      <TextView
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="16dp"
+          android:textSize="16sp"
+          android:textAlignment="center"
+          android:layout_below="@+id/tv_nothing_yet"
+          android:id="@+id/no_lyrics_text"
+          android:text="@string/tap_on_the_to_write_your_first_lyrics_or_record_your_first_audio"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+   </RelativeLayout>
+
+   <FrameLayout
+       android:id="@+id/container"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+   </FrameLayout>
+
+   <com.dekoservidoni.omfm.OneMoreFabMenu
+       android:id="@+id/fab"
+       android:layout_marginRight="16dp"
+       android:layout_marginBottom="16dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="bottom|end"
+       app:content_options="@menu/write_record"
+       app:close_on_click="true"
+       app:color_main_button="@color/colorAccent"
+       app:color_secondary_buttons="@color/colorPrimary"
+       app:rotate_main_button="true"
+       app:size_main_button="@integer/omfm_fab_size_normal"
+       app:size_secondary_buttons="@integer/omfm_fab_size_mini"
+       app:label_text_color="@color/colorPrimary"
+       app:label_background_color="@android:color/transparent"
+       app:enable_main_as_action="true"
+       android:layout_marginEnd="16dp" />
+</FrameLayout>

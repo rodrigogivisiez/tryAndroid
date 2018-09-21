@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tullyapp.tully.PlayNoteActivity">
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:id="@+id/bpm_bar"
+        android:visibility="gone"
+        android:gravity="end"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/bpm_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_bpm_value"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/_80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:text="@string/key_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/tv_key_value"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="G"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:id="@+id/etparent"
+        android:layout_height="0dp">
+
+        <com.tullyapp.tully.Utils.NotifyingScrollView
+            android:id="@+id/notifying_scroll_view"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.tullyapp.tully.Utils.ExtendedEditText
+                android:gravity="top"
+                android:padding="16dp"
+                android:id="@+id/et_lyrics"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.tullyapp.tully.Utils.NotifyingScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/borderBottomColor"
+            android:layout_height="1dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:id="@+id/player_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:id="@+id/notification_deco"
+                android:src="@drawable/recording_notification_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="@string/_0"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="1.8dp"
+                android:textSize="10sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="16dp"
+                android:id="@+id/tv_rec_counter" />
+
+            <TextView
+                android:id="@+id/tv_projectname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:maxLines="1"
+                android:text="@string/ultrasound"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/unloop_box"
+                app:layout_constraintStart_toEndOf="@+id/notification_deco"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_filename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_projectname"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:maxLines="1"
+                android:text="@string/beat_v1"
+                android:textColor="@color/colorPrimary"
+                app:layout_constraintEnd_toStartOf="@+id/unloop_box"
+                app:layout_constraintStart_toEndOf="@+id/notification_deco"
+                app:layout_constraintTop_toBottomOf="@+id/tv_projectname" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:clickable="true"
+                android:id="@+id/unloop_box"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true">
+
+                <TextView
+                    android:text="@string/loop"
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/loop_text"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp" />
+
+                <ImageView
+                    android:id="@+id/loop_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_unloop"/>
+
+            </LinearLayout>
+
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="16dp">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.35"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="@string/_00_00"
+                        android:textColor="@color/colorLightText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="12sp"
+                        android:id="@+id/tv_startTime" />
+
+                    <android.support.v7.widget.AppCompatSeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:maxHeight="10dp"
+                        android:minHeight="10dp"
+                        android:layout_below="@id/tv_startTime"
+                        android:progressDrawable="@drawable/progress"
+                        android:thumb="@drawable/seekbarthumb"
+                        android:progressTintMode="src_over"
+                        android:id="@+id/appCompatSeekBar" />
+
+                    <TextView
+                        android:text="@string/_00_00"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorLightText"
+                        android:id="@+id/tv_endtime"
+                        android:textSize="12sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="0.65"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/player_play_green"
+                        android:id="@+id/player_write"
+                        android:layout_width="80dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@drawable/player_play_icon"
+                        android:id="@+id/btn_play"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="80dp"
+                        android:transitionName="simple_activity_transition"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@drawable/player_record_icon"
+                        android:id="@+id/btn_record"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="80dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:id="@+id/recording_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        
+        <com.tullyapp.tully.CustomView.RecorderVisualizerView
+            android:id="@+id/visualizer"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:layout_below="@+id/visualizer"
+            android:id="@+id/lbl_rec"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:text="@string/recording"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_below="@+id/lbl_rec"
+            android:text="@string/_00_00"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeBG">
+
+    <LinearLayout
+        android:id="@+id/message_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:weightSum="1"
+        android:clickable="false">
+
+        <ImageView
+            android:id="@+id/iv_attach"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:background="@drawable/create_icon" />
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/message"
+            android:layout_weight="0.77"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:background="@drawable/white_et"
+            android:textColorHint="@color/colorLightText"
+            android:maxLines="4"
+            android:scrollbars="vertical"/>
+
+
+
+        <ImageView
+            android:id="@+id/iv_send_message"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.13"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_send_button" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/message_container">
+
+        <ListView
+            android:id="@+id/lv_chats"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_above="@id/message_container"
+            android:divider="@android:color/transparent"
+            android:layout_marginBottom="5dp"
+            android:dividerHeight="16dp"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll" />
+
+        <TextView
+            android:id="@+id/tv_message_top_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/today"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/chat_date_bg"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorWhite"/>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

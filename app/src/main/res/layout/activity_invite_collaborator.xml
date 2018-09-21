@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/intercom_white"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/tv_invite_via_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/invite_via_email"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_below="@+id/tv_invite_via_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorMuteText"
+            android:text="@string/desc_song_write_record"
+            app:layout_constraintTop_toBottomOf="@+id/tv_invite_via_email"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/tv_desc"
+            style="@style/FormEditTxtWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/email"
+            android:inputType="textWebEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc"/>
+
+        <Button
+            android:id="@+id/btn_send_invite"
+            android:background="@drawable/app_greenbtn"
+            android:text="@string/send"
+            style="@style/WhiteTextLabels"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAllCaps="false"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

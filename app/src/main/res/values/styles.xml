@@ -1,0 +1,136 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="ParentMaterialTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/avenir_medium_font</item>
+    </style>
+
+    <style name="TabCustom" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/avenir_medium_font</item>
+    </style>
+
+    <style name="MaterialTheme" parent="ParentMaterialTheme" />
+
+    <style name="SplashScreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">@drawable/splash_screen</item>
+    </style>
+
+    <style name="onboarding" parent="Theme.AppCompat.NoActionBar" />
+
+
+    <style name="MaterialTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="MaterialTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ParentMaterialTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="FullScreenDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="WhiteTextLabels">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="DarkTextLabels">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="MyDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+    </style>
+
+
+    <style name="FullDialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="NoPad" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="MuteText">
+        <item name="android:textColor">@color/colorMuteText</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="WhiteRadio" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/theme_radio</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+
+    <style name="GrayRadio" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/theme_radio_gray</item>
+        <item name="android:textColor">@color/colorLightText</item>
+    </style>
+
+
+    <style name="FormEditTxt">
+        <item name="android:textColor">@color/colorLightText</item>
+        <item name="android:textColorHint">@color/colorLightText</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="FormEditTxtWhite">
+        <item name="android:textColor">@color/colorLightText</item>
+        <item name="android:textColorHint">@color/colorLightText</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@drawable/white_et</item>
+    </style>
+
+    <style name="ParentMaterialTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="ParentMaterialTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="NavDrawerTextStyle">
+        <item name="listPreferredItemPaddingLeft">60dp</item>
+    </style>
+
+    <style name="AppTheme.Picker" parent="Theme.AppCompat.Light" >
+        <item name="android:editTextColor">#fff</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.DarkPicker" parent="Theme.AppCompat.Light" >
+        <item name="android:editTextColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/right_to_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/left_to_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/right_to_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/left_to_right</item>
+    </style>
+</resources>

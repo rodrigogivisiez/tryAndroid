@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:textColor="@color/colorAccent" android:color="@color/colorAccent" android:drawable="@drawable/radio_green" android:state_checked="true"/>
+    <item android:textColor="@android:color/white" android:color="@android:color/white" android:drawable="@drawable/radio_white" android:state_checked="false"/>
+</selector>

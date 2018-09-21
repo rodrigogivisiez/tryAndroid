@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tullyapp.tully.MasterPlayNoteActivity">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:id="@+id/etparent"
+            android:layout_height="0dp">
+
+            <com.tullyapp.tully.Utils.NotifyingScrollView
+                android:id="@+id/notifying_scroll_view"
+                android:fillViewport="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.tullyapp.tully.Utils.ExtendedEditText
+                    android:gravity="top"
+                    android:padding="16dp"
+                    android:id="@+id/et_lyrics"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.tullyapp.tully.Utils.NotifyingScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@color/borderBottomColor"
+                android:layout_height="1dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/player_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_cast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:paddingTop="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/audio_destination" />
+
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="end"
+                    android:maxEms="10"
+                    android:maxLines="1"
+                    android:text="@string/ultrasound"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintEnd_toStartOf="@+id/repeateToggle"
+                    app:layout_constraintStart_toEndOf="@+id/img_cast"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:src="@drawable/repeat"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/repeateToggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:scaleType="centerInside"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_alignParentEnd="true" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="16dp">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.50"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="@string/_00_00"
+                        android:textColor="@color/colorLightText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="12sp"
+                        android:id="@+id/tv_startTime" />
+
+                    <android.support.v7.widget.AppCompatSeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:maxHeight="10dp"
+                        android:minHeight="10dp"
+                        android:layout_below="@id/tv_startTime"
+                        android:progressDrawable="@drawable/progress"
+                        android:thumb="@drawable/seekbarthumb"
+                        android:progressTintMode="src_over"
+                        android:id="@+id/appCompatSeekBar" />
+
+                    <TextView
+                        android:text="@string/_00_00"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/colorLightText"
+                        android:id="@+id/tv_endtime"
+                        android:textSize="12sp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="0.65"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/player_play_green"
+                        android:id="@+id/player_write"
+                        android:layout_width="80dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:src="@drawable/player_play_icon"
+                        android:id="@+id/btn_play"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="80dp"
+                        android:transitionName="simple_activity_transition"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>
+

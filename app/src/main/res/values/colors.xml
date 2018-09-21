@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#263238</color>
+    <color name="colorPrimaryDark">#182024</color>
+    <color name="colorAccent">#2E7D32</color>
+    <color name="colorDimPrimary">#51646E</color>
+
+    <color name="colorLightText">#A9A9A9</color>
+    <color name="colorMuteText">#C6C6C6</color>
+    
+    <color name="drawerText">#eee</color>
+    <color name="inactiveAnimationTextColor">#ddd</color>
+    <color name="borderBottomColor">#E6E6E6</color>
+    
+    <color name="playerBackgroundColor">#F3F3F3</color>
+    <color name="themeBG">#F3F3F3</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="defaultProfileColor">#ddd</color>
+
+    <color name="defaultBG">#FAFAFA</color>
+    <color name="sheetBg">#FAFAFA</color>
+    <color name="selectedItemBG">#384c56</color>
+    <color name="market_watch_subtitle">#718994</color>
+    <color name="market_watch_text">#B9D0DB</color>
+
+    <color name="import_bg">#3e5374</color>
+    <color name="import_light_bg">#4B638B</color>
+
+    <color name="home_title_bar_bg">#F4F6F7</color>
+
+    <color name="colorDarkOverlay">#c8182024</color>
+
+    <color name="loop_overlay">#64182024</color>
+    <color name="tutorial_bg">#182023</color>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tully_logos_full_size_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_vertical_margin">
+
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_dialog_close"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv_invited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/invitation_description"
+            android:textColor="@color/intercom_white"
+            android:textSize="22sp"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/desc_song_write_record"
+            android:textColor="@color/intercom_white"
+            android:textSize="18sp"
+            android:layout_below="@id/tv_invited"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_accept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2E7D32"
+            android:text="@string/accept"
+            android:textColor="@color/intercom_white"
+            android:textAllCaps="true"
+            android:padding="18dp"
+            android:layout_margin="15dp"/>
+
+        <!--<View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/selectedItemBG"/>-->
+
+        <Button
+            android:id="@+id/btn_decline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#2E7D32"
+            android:text="@string/decline"
+            android:textColor="@color/intercom_white"
+            android:textAllCaps="true"
+            android:padding="18dp"
+            android:layout_margin="15dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

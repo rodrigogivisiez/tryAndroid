@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:background="@drawable/lyrics_popup_bg"
+    android:scrollbars="vertical"
+    android:popupElevation="20dp"
+    android:layout_height="300dp">
+
+    <ImageView
+        android:src="@drawable/close_icon"
+        android:id="@+id/btn_close"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="30dp"
+        android:scaleType="centerInside"
+        android:layout_height="16dp"
+        android:focusable="true" />
+
+    <TextView
+        android:text="@string/meaning"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="40dp"
+        android:id="@+id/title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="65dp"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_word_info"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:lineSpacingExtra="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ScrollView>
+
+
+</RelativeLayout>

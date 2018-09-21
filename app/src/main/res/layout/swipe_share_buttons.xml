@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_gravity="end"
+    android:gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:clickable="true"
+            android:id="@+id/widget_rename"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/widget_rename_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:clickable="true"
+            android:id="@+id/widget_share"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/swipe_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:clickable="true"
+            android:id="@+id/widget_delete"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="wrap_content"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/swipe_delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+</LinearLayout>

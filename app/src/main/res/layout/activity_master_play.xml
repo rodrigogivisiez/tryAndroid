@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tullyapp.tully.MasterPlayActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/playerBackgroundColor"
+            android:id="@+id/createProjectSection"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+        </RelativeLayout>
+
+        <android.support.constraint.ConstraintLayout
+                android:orientation="vertical"
+                android:id="@+id/cl_swipeup"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:background="@android:color/white"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:id="@+id/img_cast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:paddingTop="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/audio_destination" />
+
+                <ImageView
+                    android:id="@+id/analyze_music"
+                    android:layout_marginStart="8dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/ic_analyze_music"
+                    app:layout_constraintStart_toEndOf="@+id/img_cast"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"/>
+
+                <TextView
+                    android:id="@+id/tv_filename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:maxEms="10"
+                    android:maxLines="1"
+                    android:text="@string/beat_v1"
+                    android:textColor="@color/colorPrimary"
+                    android:transitionName="simple_text_transition"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:src="@drawable/repeat"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="?selectableItemBackgroundBorderless"
+                    android:paddingEnd="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/repeateToggle"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_alignParentEnd="true" />
+
+
+                <TextView
+                    android:text="@string/_00_00"
+                    android:textColor="@color/colorLightText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:id="@+id/tv_startTime"
+                    app:layout_constraintBottom_toTopOf="@+id/appCompatSeekBar"
+                    android:layout_marginLeft="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginStart="8dp" />
+
+                <TextView
+                    android:text="@string/_00_00"
+                    android:id="@+id/tv_endtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorLightText"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/appCompatSeekBar"
+                    android:layout_marginEnd="8dp" />
+
+
+                <android.support.v7.widget.AppCompatSeekBar
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="16dp"
+                    android:maxHeight="10dp"
+                    android:minHeight="10dp"
+                    android:layout_marginTop="50dp"
+                    android:progressDrawable="@drawable/progress"
+                    android:thumb="@drawable/seekbarthumb"
+                    android:progressTintMode="src_over"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_filename"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:id="@+id/appCompatSeekBar" />
+
+
+            <ImageView
+                android:id="@+id/play_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.15"
+                android:background="?selectableItemBackgroundBorderless"
+                android:padding="15dp"
+                android:src="@drawable/player_left"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatSeekBar"
+                android:layout_marginLeft="20dp" />
+
+                <ImageView
+                    android:id="@+id/btn_play"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="0.26"
+                    android:src="@drawable/player_play_icon"
+                    android:transitionName="simple_activity_transition"
+                    app:layout_constraintEnd_toStartOf="@+id/play_right"
+                    app:layout_constraintStart_toEndOf="@+id/play_left"
+                    app:layout_constraintTop_toBottomOf="@+id/appCompatSeekBar" />
+
+
+            <ImageView
+                android:id="@+id/play_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="0.15"
+                android:padding="15dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/player_right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatSeekBar"
+                android:layout_marginRight="20dp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

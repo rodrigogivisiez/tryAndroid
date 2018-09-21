@@ -1,0 +1,354 @@
+<resources>
+    <string name="app_name">Tully</string>
+
+    <string name="facebook_app_id">1826726547641781</string>
+    <string name="fb_login_protocol_scheme">fb1826726547641781</string>
+
+    <string name="title_activity_onboarding">OnboardingActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="play">Play</string>
+    <string name="write">Write</string>
+    <string name="record">Record</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log in</string>
+    <string name="songwriting_starts_here">Songwriting starts here.</string>
+    <string name="save_and_play_your_music_with_tully">Save and play your music with tully</string>
+    <string name="creative_writing">Creative Writing</string>
+    <string name="write_your_lyrics_and_link_them_to_an_audio_file">Write your lyrics and link them to an audio file.</string>
+    <string name="catch_a_vibe">Catch a vibe</string>
+    <string name="record_with_the_music_playing_while_looking_at_your_lyrics">Record with the music playing while looking at your lyrics</string>
+    <string name="one_touch_sign">One Touch Sign</string>
+    <string name="fingerprint_sign_in_makes_your_app_login_much_faster">Fingerprint sign in makes your app login much faster.</string>
+    <string name="facebook">Facebook</string>
+    <string name="forgot_your_password_get_help">Forgot your password? Get help</string>
+    <string name="by_logging_in_you_agree">By logging in, you agree to</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="our_terms">our Terms</string>
+    <string name="by_singup_you_agree_to">by singup, you agree to</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="enter_your_email_below_to_receive_your_password_reset_instructions">Enter your email below to receive your password reset instructions</string>
+    <string name="let_s_start">Let\'s start</string>
+    <string name="select_the_options_that_best_describe_you">Select the Options that Best Describe You</string>
+    <string name="select_more_than_one_if_needed">Select more than one if needed</string>
+    <string name="solo_artist">Solo artist</string>
+    <string name="producer">Producer</string>
+    <string name="band">Band</string>
+    <string name="engineer">Engineer</string>
+    <string name="primary_genre">Primary Genre</string>
+    <string name="artist_name">Artist Name</string>
+
+    <string name="title_activity_home">Tully</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_files_or_projects_yet">No Files or Projects Yet!</string>
+    <string name="save_audio_files_here_to_get_started">Save audio files here to get \n started</string>
+    <string name="ultrasound">Ultrasound</string>
+    <string name="_18_items">18 items</string>
+    <string name="search">Search</string>
+    <string name="all">All</string>
+    <string name="delete">Delete</string>
+    <string name="sure_delete_message">Are you sure you want to delete selected items?</string>
+    <string name="sure_delete_message_lyrics">Are you sure you want to delete selected lyrics?</string>
+    <string name="sure_delete_message_recording">Are you sure you want to delete selected recording?</string>
+    <string name="sure_delete_message_files">Are you sure you want to delete selected files?</string>
+    <string name="sure_delete_message_title">Delete Selected Project ?</string>
+    <string name="sure_delete_message_title_lyrics">Delete Selected Lyrics ?</string>
+    <string name="sure_delete_message_title_recording">Delete Selected recording ?</string>
+    <string name="sure_delete_message_title_file">Delete Selected File ?</string>
+    <string name="nothing_was_selected">Nothing was selected</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="joyner_lucas">Joyner Lucas</string>
+    <string name="you_finally_got_some_paper_couldn_t_wait_to_get_it_and_it_don_t_really_matter_cause_you_re_still_lame_no_matter">You finally got some paper couldn\'t wait to get it and it don\'t really matter \'cause you\'re still lame, No matter</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="set_up_one_touch_sign_in">Set Up One Touch Sign In</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="support">Support</string>
+    <string name="submit_feedback">Submit Feedback</string>
+    <string name="rate_tully">Rate Tully</string>
+    <string name="about">About</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="logout">Logout</string>
+    <string name="tully">TULLY</string>
+    <string name="sure_to_delete_selected_files">delete selected files ?</string>
+    <string name="project_name">Project name</string>
+    <string name="title_activity_lyrics_list">LyricsListActivity</string>
+    <string name="tap_on_the_to_create_your_first_lyrics">Tap on the + to create your first lyrics!</string>
+    <string name="title_activity_lyrics">LyricsActivity</string>
+    <string name="the_club_isn_t_the_best_place">The club isn\'t the best place…</string>
+    <string name="no_project_assigned">No Project Assigned</string>
+    <string name="title_activity_recording_listing">RecordingListingActivity</string>
+    <string name="no_recordings_yet">No Recordings yet!</string>
+    <string name="tap_on_the_plus_symbol_to_create_your_first_recording">Tap on the plus symbol to create your first recording</string>
+    <string name="first_record">First Record</string>
+    <string name="name_your_project">Name Your Project</string>
+    <string name="rename_your_project">Rename Project</string>
+    <string name="you_can_access_this_project_from_the_home_tab">You can access this project from the home tab.</string>
+    <string name="create">CREATE</string>
+    <string name="cancel_capital">CANCEL</string>
+    <string name="title_activity_player_list">PlayerListActivity</string>
+    <string name="nothing_to_listen_to_yet">Nothing to listen to yet!</string>
+    <string name="save_an_audio_file_to_the_tully_app_you_can_then_access_it_here">Save an audio file to the Tully app, you can then access it here.</string>
+    <string name="beats_v1_mp3">Beats V1.mp3</string>
+    <string name="_9_76_mb">9.76 MB</string>
+    <string name="click_here_to_start_writing">Click here to start writing</string>
+    <string name="please_support_tully_by_rating_us_on_the_app_store_or_suggesting_us_how_we_can_improve">Please support Tully by rating us on the App Store or suggesting us how we can improve.</string>
+    <string name="rate_us_5_stars">RATE US 5 STARS</string>
+    <string name="you_can_access_this_project">You can access this project from the home tab</string>
+    <string name="this_operation_is_sensitive_and_requires_recent_authentication_log_in_again_before_retrying_this_request">This operation is sensitive and requires recent authentication. Log in again before retrying this request.</string>
+    <string name="re_authenticate">Re-Authenticate</string>
+    <string name="new_password">New Password</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="update">Update</string>
+    <string name="one_touch_sign_in">One Touch Sign In</string>
+    <string name="turn_off_touch_id_anytime_from_here">Turn off Touch ID anytime from here</string>
+    <string name="swipe_to_continue">Swipe to continue</string>
+    <string name="select_a_word">Select a Word</string>
+    <string name="meaning">Meaning</string>
+    <string name="search_item">Search Item</string>
+    <string name="login">LOGIN</string>
+    <string name="select_genere">Select Genere</string>
+    <string name="rename_file">Rename File</string>
+    <string-array name="genere">
+        <item>Alternative Music</item>
+        <item>Blues</item>
+        <item>Classical Music</item>
+        <item>Country Music</item>
+        <item>Dance Music</item>
+        <item>Easy Listening</item>
+        <item>Electronic Music</item>
+        <item>European Music (Folk / Pop)</item>
+        <item>Hip Hop / Rap</item>
+        <item>Indie Pop</item>
+        <item>Inspirational (incl. Gospel)</item>
+        <item>Asian Pop (J-Pop, K-pop)</item>
+        <item>Jazz</item>
+        <item>Latin Music</item>
+        <item>New Age</item>
+        <item>Opera</item>
+        <item>Pop (Popular music)</item>
+        <item>R&amp;B / Soul</item>
+        <item>Reggae</item>
+        <item>Rock</item>
+        <item>Singer / Songwriter (inc. Folk)</item>
+        <item>World Music / Beats</item>
+    </string-array>
+
+    <string-array name="audio_output">
+        <item>Speakers</item>
+        <item>Audio Jack</item>
+        <item>Bluetooth</item>
+    </string-array>
+
+    <string name="intercom_app_id">ne8l5lbm</string>
+    <string name="intercom_app_key">android_sdk-43141efd47c445c64583d5a54e649ee50a6543ba</string>
+    <string name="intercom_gcm_sender_id">768205758755</string>
+    <string name="no_lyrics_yet">No Lyrics yet!</string>
+    <string name="projects">Projects</string>
+    <string name="lyrics">Lyrics</string>
+    <string name="recording">Recordings</string>
+    <string name="_0">0</string>
+    <string name="beat_v1">Beat V1</string>
+    <string name="_00_00">00:00</string>
+    <string name="tully_is_working_with_top_producers_to_bring_you_the_perfect_beat_collection">Tully is working with top producers to bring you the perfect beat collection!</string>
+    <string name="market_watch">Market Watch</string>
+    <string name="market_place">Marketplace</string>
+    <string name="get_notifed_when_the_market_opens">Get notifed when the market opens</string>
+    <string name="stay_tuned">Stay tuned</string>
+    <string name="we_will_notify_you_when_it_opens">We will notify you when it opens</string>
+    <string name="learn_more">Learn More</string>
+    <string name="_1">1</string>
+    <string name="share">Share</string>
+    <string name="note">Note</string>
+    <string name="rename">Rename</string>
+    <string name="player_list">Player List</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="player">Player</string>
+    <string name="help">Help</string>
+    <string name="tully_support">Tully Support</string>
+    <string name="invite_via_email">Invite Via Email</string>
+    <string name="email">Email</string>
+    <string name="send">Send</string>
+    <string name="invite_successfully_sent">Invite Successfully Sent</string>
+    <string name="your_invitation_has_been_successfully_sent_to">Your invitation has been successfully sent to</string>
+    <string name="okay">Okay</string>
+    <string name="engineer_access">Engineer Access</string>
+    <string name="want_admin_access_to_your_web_portal">Want admin access to your web portal ?</string>
+    <string name="web_access_gives_you_full_control_over_your_files_and_folders">Web access gives you full control over your files and folders.</string>
+    <string name="submit">Submit</string>
+    <string name="masters">Masters</string>
+    <string name="files">Files</string>
+    <string name="rename_cap">RENAME</string>
+    <string name="add_engineer">Add Engineer</string>
+    <string name="_2_57">2:57</string>
+    <string name="_4_99">$4.99</string>
+    <string name="make_payment">Make PAYMENT</string>
+    <string name="_1_8_1_80_mb">1.8 $ | 1.80 MB</string>
+    <string name="validating">Validating</string>
+    <string name="processing_transaction">Processing Transaction</string>
+    <string name="exclusive">EXCLUSIVE</string>
+    <string name="free">Free</string>
+    <string name="order_complete">Order\n Complete</string>
+    <string name="see_you_on_the_charts">See you on the charts</string>
+    <string name="bank_to_market">Back to Market</string>
+    <string name="beats">Beats</string>
+    <string name="rename_beat">Rename Beat</string>
+    <string name="loop">Loop</string>
+    <string name="unloop">Un-Loop</string>
+    <string name="loop_wave">loop wave</string>
+    <string name="_0_00">00 : 00</string>
+    <string name="apply">Apply</string>
+    <string name="getting_started">Getting started</string>
+    <string name="free_beat">Free beat</string>
+    <string name="help_support">Help support</string>
+    <string name="loop_function">Loop function</string>
+    <string name="we_are_keeping_your_n_files_safe">We are keeping your \n files safe</string>
+    <string name="yes_allow_file_to_be_downloaded">YES, ALLOW FILE TO BE \n DOWNLOADED</string>
+    <string name="no_please_protect_my_file">NO, PLEASE PROTECT MY FILE</string>
+    <string name="free_beat_id">-L1111aaaaaaaaaaaaaa</string>
+    <string name="files_projects_are_stored_in_homescreen">Files, Projects are stored in homescreen.</string>
+    <string name="cancel">Cancel</string>
+    <string name="tcontinue">Continue</string>
+    <string name="free_beat_file_name">-L8qd73ex0jC30gHQPPX.wav</string>
+    <string name="last_chr">\uf8ff</string>
+    <string name="please_search_again">Please search again</string>
+    <string name="no_search_result_found">No files can be found with this search result! (Search is case-sensitive)</string>
+    <string name="about_tully_text">The Tully App was created as a solution allowing recording artists and songwriters to play, write, and record song ideas all within one application. Artists can share their projects with their engineer before studio sessions, allowing instant access to the audio file, lyric sheet, and recording ideas.</string>
+    <string name="save">Save</string>
+    <string name="recording_txt">Recording</string>
+    <string name="subscribe_now">Subscribe Now</string>
+    <string name="multitrack_upgrade_gives_you_access_to_tully_studio_with_all_the_latest_releases">Multitrack upgrade gives you access to Tully Studio with all the latest releases</string>
+    <string name="one_time">ONE-TIME</string>
+    <string name="_49_99">$49.99</string>
+    <string name="one_payment">ONE PAYMENT</string>
+    <string name="write_record">Write - Record</string>
+    <string name="_80">80</string>
+    <string name="key">KEY</string>
+    <string name="detecting">Detecting…</string>
+    <string name="_35">35%</string>
+    <string name="automatically_detect_the_key_and_bpm_of_your_tracks">Automatically detect the Key\nand BPM of your tracks!</string>
+    <string name="detect">Detect</string>
+    <string name="bpm">BPM</string>
+    <string name="bpm_">BPM :</string>
+    <string name="key_">KEY :</string>
+    <string name="_1_99_monthly">1.99 Monthly</string>
+    <string name="pay_1_99">Pay 1.99 $</string>
+    <string name="back_to_analyze_audio">Back to Analyze Audio</string>
+    <string name="subscription">Subscription</string>
+    <string name="audio_aanlyzer_subscription">Audio Analyzer Subscription</string>
+    <string name="unsubscribe">Unsubscribe</string>
+    <string name="import_link">Import Link</string>
+    <string name="upload_production">Upload Production</string>
+    <string name="use_the_link_below_to_upload_nproduction_into_your_tully_account">Use the link below to upload\n production into your Tully account.</string>
+    <string name="import_description">Open website on a desktop computer,\n you will need to use your Tully\n username and password to access.</string>
+    <string name="http_www_tullyconnect_com_artist_auth_login">tullyconnect.com/artist/auth/login</string>
+    <string name="got_it">GOT IT</string>
+    <string name="import_audio">Import Audio</string>
+    <string name="admin_access">Admin Access</string>
+    <string name="engineers_can_upload_download_and_delete_master_files">Engineers can upload, download and delete master files</string>
+    <string name="_5gb_free_storage">5GB free storage</string>
+    <string name="basic">Basic</string>
+    <string name="_1tb_of_storage_6_95_monthly">1TB of storage\n $6.95 / Monthly</string>
+    <string name="upgrade_send">Upgrade + Send</string>
+    <string name="unlimited_storage_12_99_monthly">Unlimited storage\n $ 12.99 / Monthly</string>
+    <string name="_6_95">$6.95 Monthly</string>
+    <string name="_12_99">$12.99 Monthly</string>
+    <string name="back_to_engineer_access">Back to Engineer Access</string>
+    <string name="shared_with">Shared with</string>
+    <string name="ability_to_delete_files">Ability to delete files</string>
+    <string name="shared_files">Shared Files</string>
+    <string name="link_sharing">Link Sharing</string>
+    <string name="do_you_want_the_other_person_to_have_the_option_to_download">Do you want the other person to have the \n option to Download?</string>
+    <string name="no">No</string>
+    <string name="expire_after_1_listen">Expire after 1 listen</string>
+    <string name="expire_after_24_hours">Expire after 24 hours</string>
+    <string name="do_not_expire">Do Not Expire</string>
+    <string name="copy_url">COPY URL</string>
+    <string name="share_free_desc">Share Master files with your Engineer.\nYou have 1GB of free space!</string>
+    <string name="share_basic_desc">Share Master files with your Engineer.\nYou have 1TB of total space!</string>
+    <string name="share_unlimited_desc">Share Master files with your Engineer.\nYou have unlimited space!</string>
+    <string name="yes">Yes</string>
+    <string name="invite_engineer">Invite Engineer</string>
+    <string name="allow_engineers_to_share_mixes_and_master_files_with_you_directly_on_tully">Allow Engineers to share Mixes and Master files with you directly on Tully</string>
+    <string name="keep_your_files_secure_and_safe_by_no_longer_asking_for_your_audio_files_to_be_shared_via_email">Keep your files secure and safe by no longer asking for your audio files to be shared via email</string>
+    <string name="you_can_access_and_manage_all_your_audio_files_by_logging_into_tully_connect_with_your_tully_app_credentials_get_the_login_url_easily_by_selecting">You can access and manage all your audio files by logging into Tully connect with your Tully app credentials. Get the login URL easily by selecting</string>
+    <string name="the_link_icon_from_the_navigaton_bar">the link icon from the navigaton bar.</string>
+    <string name="nothing_yet">Nothing yet!</string>
+    <string name="tap_on_the_to_write_your_first_lyrics_or_record_your_first_audio">Tap on the + to write your first lyrics \n or record your first audio!</string>
+    <string name="dash_3">---</string>
+
+    <string-array name="tuts_home">
+        <item>Files, Projects are stored in homescreen.</item>
+        <item>Click and hold files and projects to share.</item>
+    </string-array>
+
+    <string-array name="tuts_play">
+        <item>Loop, Record and Write\nyour ideas, hooks, verse’s.</item>
+        <item>Loop specific parts of the audio\nyou might be writing too.</item>
+        <item>Record your ideas, hooks, verse’s.</item>
+        <item>Write while listening to your beat at the same time.</item>
+        <item>You have access to a full rhyming catalog by selecting a word.</item>
+    </string-array>
+
+    <string-array name="tuts_marketplace">
+        <item>Marketplace – Opt-In to get\naccess to beats  coming soon</item>
+        <item>Help - Live chat, Tully support will help you with any questions you have.</item>
+    </string-array>
+
+    <string-array name="tuts_lyrics">
+        <item>All your lyrics are stored here.</item>
+        <item>You will see “no project assigned” when your writing without listening to a beat inside the Tully App.</item>
+    </string-array>
+
+    <string-array name="tuts_recording">
+        <item>Record ideas and vocals as your listening to beats in the studio or external speakers.</item>
+    </string-array>
+    
+    <!--String resources added by Santosh -->
+    
+    <string name="desc_song_write_record">Song-write, record ideas and create together all within Tully.</string>
+    <string name="invitation_description">invited you to collaborate.</string>
+    <string name="invite_song_writers_for_collaboration">Invite song writers and collaborate on projects.</string>
+    <string name="desc_tully_support_for_subscription">Tully supports a private work space, therefore you have to invite writers to use the collaboration feature.</string>
+
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="invite">Invite</string>
+    <string name="group_chat">Group Chat</string>
+    <string name="message">Message</string>
+    <string name="collaboration_payment">Collaboration Payment</string>
+    <string name="collaboration">Collaboration</string>
+    <string name="error_network_connection">Please make sure, Internet is on !</string>
+    <string name="goto_invite">Goto Invite Screen</string>
+    <string name="successfully_invited">Invitation Sent.</string>
+    <string name="invalid_card">Invalid Card.</string>
+    <string name="transaction_in_progress">Transaction in progress.</string>
+    <string name="network_error_payment_failed">Network Error - Payment Failed</string>
+    <string name="user_auth_failed">User Auth Failed</string>
+
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="images">Images</string>
+    <string name="document">Document</string>
+    <string name="select">Select</string>
+    <string name="uploaded">Uploaded</string>
+    <string name="failed">Failed</string>
+    <string name="tully_file_">Tully_File_</string>
+
+    <string name="uploading_with_dot">Uploading...</string>
+    <string name="please_enter_some_texts">Please enter some texts!</string>
+    <string name="failed_getting_image">Failed getting image</string>
+    <string name="download_successfully">Download Successfully</string>
+    <string name="no_permission">No Permission</string>
+
+
+
+</resources>

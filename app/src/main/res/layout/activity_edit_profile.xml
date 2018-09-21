@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeBG"
+    android:orientation="vertical"
+    tools:context="com.tullyapp.tully.EditProfileActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Artist Name"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorLightText"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:text="Kathan Shah"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_name"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_toLeftOf="@+id/btn_save_artist_name"
+            android:textSize="14sp"
+            android:background="@drawable/editprofile_et"
+            android:visibility="invisible"
+            android:id="@+id/et_name"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:text="Kathan Shah"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/btn_save_artist_name"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:id="@+id/rl_genre"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/primary_genre"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorLightText"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_genre"
+            android:text="@string/solo_artist"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="E-Mail"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorLightText"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="kathan@gmail.com"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:id="@+id/tv_email"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_toLeftOf="@+id/btn_save_email"
+            android:textSize="14sp"
+            android:background="@drawable/editprofile_et"
+            android:id="@+id/et_email"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:text="kathan@gmail.com"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/btn_save_email"
+            android:layout_marginLeft="10dp"
+            android:visibility="invisible"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Facebook Connect"
+            android:textColor="@color/colorLightText"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/ic_facebook"
+            android:id="@+id/fbbtn"
+            android:layout_toLeftOf="@+id/tv_fbname"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/fb_login_button"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
+        <TextView
+            android:id="@+id/tv_fbname"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

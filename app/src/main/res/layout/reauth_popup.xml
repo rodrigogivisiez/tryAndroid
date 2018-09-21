@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/popupbg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/re_authenticate"
+            android:textSize="20sp"
+            android:id="@+id/tv_pop_title"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/this_operation_is_sensitive_and_requires_recent_authentication_log_in_again_before_retrying_this_request"
+            android:textColor="@color/colorLightText"
+            android:layout_marginTop="12dp"
+            android:id="@+id/tv_pop_desc"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textColor="@color/colorPrimary"
+            android:hint="Email ID"
+            android:textSize="18sp"
+            android:id="@+id/et_popup_email"
+            android:background="@drawable/pop_edittext_bg"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/colorLightText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textColor="@color/colorPrimary"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="18sp"
+            android:id="@+id/et_popup_pwd"
+            android:background="@drawable/pop_edittext_bg"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/colorLightText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:background="@android:color/white"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/btn_popup_cancel"
+                android:text="@string/cancel_capital"
+                android:clickable="true"
+                android:textSize="16sp"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+            <Button
+                android:background="@android:color/white"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/btn_popup_login"
+                android:text="@string/login"
+                android:clickable="true"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

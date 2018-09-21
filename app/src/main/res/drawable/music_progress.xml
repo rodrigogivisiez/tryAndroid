@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/wave_inactive"></item>
+    <item>
+        <clip
+            android:clipOrientation="horizontal"
+            android:gravity="start|left"
+            android:drawable="@drawable/wave_active"/>
+    </item>
+</layer-list>

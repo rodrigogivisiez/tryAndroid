@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_record_list"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_record_icon"
+        android:visible="false"
+        android:title="@string/record"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_write_list"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_write_icon"
+        android:visible="false"
+        android:title="@string/write"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_invite_engineer"
+        android:orderInCategory="1"
+        android:icon="@drawable/float_icon_plus"
+        android:title="@string/write"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_artist"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_share_shortcut"
+        android:title="@string/write"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="1"
+        android:title="@string/search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always|collapseActionView"/>
+
+    <item
+        android:id="@+id/action_options"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_options_icon"
+        app:showAsAction="always"
+        android:title="@string/learn_more" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="3"
+        android:icon="@drawable/ic_cog"
+        android:visible="false"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom" />
+
+</menu>

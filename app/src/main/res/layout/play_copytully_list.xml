@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+
+    <TextView
+        android:text="@string/_1"
+        android:id="@+id/tv_index"
+        android:textSize="18sp"
+        android:textColor="@color/colorLightText"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:src="@drawable/pr_play"
+        android:layout_toRightOf="@+id/tv_index"
+        android:id="@+id/btn_play"
+        android:layout_marginLeft="16dp"
+        android:layout_width="34dp"
+        android:layout_centerVertical="true"
+        android:layout_height="34dp"
+        android:layout_toEndOf="@+id/tv_index"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:text="@string/ultrasound"
+        android:ellipsize="end"
+        android:layout_toRightOf="@id/btn_play"
+        android:layout_centerVertical="true"
+        android:paddingLeft="12dp"
+        android:layout_marginRight="50dp"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:id="@+id/tv_file_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/btn_play"
+        android:paddingStart="12dp"
+        android:layout_marginEnd="50dp" />
+
+    <TextView
+        android:text="@string/_9_76_mb"
+        android:id="@+id/tv_file_size"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:layout_below="@+id/btn_play"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</RelativeLayout>

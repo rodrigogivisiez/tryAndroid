@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "768205758755",
+    "firebase_url": "https://tully-ios.firebaseio.com",
+    "project_id": "tully-ios",
+    "storage_bucket": "tully-ios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768205758755:android:08ddfddb5aeff44d",
+        "android_client_info": {
+          "package_name": "com.tullyapp.tully"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768205758755-q5guh83k5r6h99pvrhcpcqaa1tvh4m7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfLh1AvgDk92rodS5xfkosKL9g2ooN-EQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

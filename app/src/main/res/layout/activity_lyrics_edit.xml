@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tullyapp.tully.Utils.NotifyingScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notifying_scroll_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.tullyapp.tully.LyricsEditActivity">
+
+    <com.tullyapp.tully.Utils.NotifyingSelectionEditText
+        android:id="@+id/et_lyrics"
+        android:textSelectHandle="@drawable/empty_image"
+        android:transitionName="simple_activity_transition"
+        android:gravity="top"
+        android:padding="16dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</com.tullyapp.tully.Utils.NotifyingScrollView>

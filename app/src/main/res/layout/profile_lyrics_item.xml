@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="220dp"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingTop="25dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="25dp"
+            android:background="@drawable/profile_project_lyrics"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/ultrasound"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/lyrics_title"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/you_finally_got_some_paper_couldn_t_wait_to_get_it_and_it_don_t_really_matter_cause_you_re_still_lame_no_matter"
+                android:lineSpacingExtra="5dp"
+                android:textSize="16sp"
+                android:transitionName="simple_activity_transition"
+                android:id="@+id/lyrics"
+                android:textColor="@color/colorLightText"
+                android:lines="4"
+                android:maxLines="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+</LinearLayout>

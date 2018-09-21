@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:id="@+id/project_recording_item"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+
+        <RelativeLayout
+            android:id="@+id/item"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/project_folder"
+                    android:layout_width="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:id="@+id/folder_icon"
+                    android:adjustViewBounds="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp" />
+
+                <TextView
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/folder_icon"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/ultrasound"
+                    android:id="@+id/tv_projectname"
+                    android:lines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_toEndOf="@+id/folder_icon" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_projectname"
+                    android:src="@drawable/ic_arrow_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tv_projectname" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    style="@style/GrayRadio"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/checkbox"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view_project_recordings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item"
+            android:visibility="gone"
+            android:background="@drawable/recording_popup"
+            android:paddingBottom="40dp"
+            android:paddingTop="40dp"
+            tools:listitem="@layout/pr_item" />
+
+        <View
+            android:layout_below="@+id/recycle_view_project_recordings"
+            android:background="@drawable/border_bottom"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/pr_item"
+            android:layout_height="1dp" />
+
+</RelativeLayout>
